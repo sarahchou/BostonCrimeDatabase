@@ -1,20 +1,46 @@
-mysql -u root -p --local-infile --show-warnings bostoncrime
+mysql -u root -p --local-infile=1 --show-warnings bostoncrime
 
-//incidents
-LOAD DATA LOCAL INFILE '/Users/katiembusemeyer/Desktop/Northeastern\ -\ Third\ Year/Database\ Design/FinalProject/BostonCrimeDatabase/database/incidents_cleaned_v3/incidents_cleaned_v3_pt_1.csv' INTO TABLE incident
+//incidents pt1 
+LOAD DATA LOCAL INFILE 'your file' INTO TABLE incident
   FIELDS TERMINATED BY ',' ENCLOSED BY '"'
   LINES TERMINATED BY '\r\n'
   IGNORE 1 LINES;
 
+
+//incidents pt2
+LOAD DATA LOCAL INFILE 'your file' INTO TABLE incident
+  FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+  LINES TERMINATED BY '\r\n'
+  IGNORE 1 LINES;
+
+//incidents_offence - latin1 char set for the slash and hyphen?
+LOAD DATA LOCAL INFILE 'your file'
+INTO TABLE incident_offence
+CHARACTER SET latin1
+  FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+  LINES TERMINATED BY '\r\n'
+  IGNORE 1 LINES;
+
+LOAD DATA LOCAL INFILE 'your file' INTO TABLE incident
+  FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+  LINES TERMINATED BY '\r\n'
+  IGNORE 1 LINES;
+
+LOAD DATA LOCAL INFILE 'your file' INTO TABLE incident
+  FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+  LINES TERMINATED BY '\r\n'
+  IGNORE 1 LINES;
+
+
 //district
-  LOAD DATA LOCAL INFILE '/Users/katiembusemeyer/Desktop/Northeastern\ -\ Third\ Year/Database\ Design/FinalProject/BostonCrimeDatabase/database/district.csv' INTO TABLE incident
+  LOAD DATA LOCAL INFILE 'your file' INTO TABLE incident
   FIELDS TERMINATED BY ',' ENCLOSED BY '"'
   LINES TERMINATED BY '\r\n'
   IGNORE 1 LINES
   (`district_id`, @name);
 
 //offence
-  LOAD DATA LOCAL INFILE '//Users/katiembusemeyer/Desktop/Northeastern\ -\ Third\ Year/Database\ Design/FinalProject/BostonCrimeDatabase/database/offence_cleaned.csv' INTO TABLE offence
+  LOAD DATA LOCAL INFILE 'your file' INTO TABLE offence
   FIELDS TERMINATED BY ',' ENCLOSED BY '"'
   LINES TERMINATED BY '\r\n'
   IGNORE 1 LINES;
