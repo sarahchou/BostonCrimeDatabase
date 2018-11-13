@@ -1,0 +1,19 @@
+//incidents
+LOAD DATA LOCAL INFILE '/Users/katiembusemeyer/Desktop/Northeastern\ -\ Third\ Year/Database\ Design/FinalProject/BostonCrimeDatabase/database/incidents_cleaned_v3/incidents_cleaned_v3_pt_1.csv' INTO TABLE incident
+  FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+  LINES TERMINATED BY '\r\n'
+  IGNORE 1 LINES;
+
+//district
+  LOAD DATA LOCAL INFILE '/Users/katiembusemeyer/Desktop/Northeastern\ -\ Third\ Year/Database\ Design/FinalProject/BostonCrimeDatabase/database/district.csv' INTO TABLE incident
+  FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+  LINES TERMINATED BY '\r\n'
+  IGNORE 1 LINES
+  (`district_id`, @name);
+
+//offence
+  LOAD DATA LOCAL INFILE '//Users/katiembusemeyer/Desktop/Northeastern\ -\ Third\ Year/Database\ Design/FinalProject/BostonCrimeDatabase/database/offence_cleaned.csv' INTO TABLE offence
+  FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+  LINES TERMINATED BY '\r\n'
+  IGNORE 1 LINES;
+
