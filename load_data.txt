@@ -1,0 +1,36 @@
+####
+
+
+# district data first
+  LOAD DATA LOCAL INFILE '/Users/schou/Desktop/BostonCrimeDatabase/database/district.csv' INTO TABLE district
+  FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+  LINES TERMINATED BY '\r\n'
+  IGNORE 1 LINES
+  (`district_id`, @name);
+
+# offence data second
+  LOAD DATA LOCAL INFILE '/Users/schou/Desktop/BostonCrimeDatabase/database/offence_cleaned.csv' INTO TABLE offence
+  FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+  LINES TERMINATED BY '\r\n'
+  IGNORE 1 LINES;
+  
+#incident data part 1 third
+LOAD DATA LOCAL INFILE '/Users/schou/Desktop/BostonCrimeDatabase/database/incidents_cleaned_v3/incidents_cleaned_v3_pt_1.csv' INTO TABLE incident
+  FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+  LINES TERMINATED BY '\r\n'
+  IGNORE 1 LINES;
+
+#incident data part 2 fourth
+LOAD DATA LOCAL INFILE '/Users/schou/Desktop/BostonCrimeDatabase/database/incidents_cleaned_v3/incidents_cleaned_v3_pt2.csv' INTO TABLE incident
+  FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+  LINES TERMINATED BY '\r\n'
+  IGNORE 1 LINES;
+  
+#offense incident data fifth
+LOAD DATA LOCAL INFILE '/Users/schou/Desktop/BostonCrimeDatabase/database/incident_offence_cleaned.csv' INTO TABLE incident_offence 
+CHARACTER SET latin1
+  FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+  LINES TERMINATED BY '\r\n'
+  IGNORE 1 LINES;
+
+####
