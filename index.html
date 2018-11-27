@@ -1,37 +1,257 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
 <html>
-<head>
-	<title>Boston Crime</title>
-	<link rel="stylesheet" type="text/css" href="css\style.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:500,800" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-</head>
-<body>
-	<header id="main-header">
-		<div id="wrapper">
-			<div id="c1">
-				<p>Boston Crime Database 2018</p>
-			</div>
-			<div id="c2">
-				<nav id="navbar">
-					<div class="container">
-						<ul>
-							<li><a href="#Home">Home</a></li>
-							<li><a href="#Geography">Geography</a></li>
-							<li><a href="#Crime">Crime</a></li>
-							<li><a href="#Time">Time</a></li>
-							<li><a href="#About Us">About Us</a></li>
-							<li><a href="#Resources">Resources</a></li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-		</div>​
-	</div>
-</header>
-	<h>Boston Crime Database</h>
-	<p>Group Members: Sarah Chou, Abby Zahne, Katie Busemeyer, Megan Lau, Fang Wu</p>
-	<p>Github: <a href=https://github.com/sarahchou/BostonCrimeDatabase>here</a></p>
-</body>
-</html>
+	<head>
+		<title>Boston Crime Database Project </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" type="text/css" href="website/assets/css/main.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
+		<style>
+			a {
+				text-decoration: none;
+			}
+		</style>
+
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html">Northeastern Boston Crime Data Project</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="website/incidents.html">Incidents</a></li>
+					<li><a href="website/location.html">Locations</a></li>
+					<li><a href="website/time.html">Times</a></li>
+					<li><a href="website/resources.html">Resources</a></li>
+					<li><a href="website/about_us.html">About Us</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<h1>BOSTON CRIME DATABASE PROJECT</h1>
+					<p>A project for our CS3200 Database Design taught by Professor John Rachlin THE DATABASE DUDE 😎 Data collected from the Boston Police Dataset was used and analyzed into trends using Tableau. </p>
+						<p></a> Check out the dataset on Kaggle</p>
+					<a href="https://www.kaggle.com/ankkur13/boston-crime-data" class="button wide">Original Dataset</a>
+				</div>
+				<video autoplay loop muted playsinline src="website/images/banner.mp4"></video>
+			</section>
+
+		<!-- Highlights -->
+			<section class="wrapper">
+				<div class="inner">
+					<header class="special">
+						<h2>Boston Crime Overview</h2>
+						<p>What can we learn about crimes in the Boston area?</p>
+					</header>
+					<div class="highlights">
+						<section>
+							<div class="content">
+								<header>
+									<a href="website/incidents.html"
+									class="material-icons" style="font-size:80px; color:#bc1a1a">warning</a>
+									<h3>Incidents</h3>
+								</header>
+								<p>The dataset we used gave us many different types of crimes committed, categorized by offence code.</p>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<header>
+									<a href="website/location.html" class="material-icons" style="font-size:80px; color:#bc1a1a">room</a>
+									<h3>Location</h3>
+								</header>
+								<p>Using latitude, longitude, street, and district codes we are able to ask questions and analyze trends about crimes committed in different areas in Boston.</p>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<header>
+									<a href="website/time.html" class="material-icons" style="font-size:80px; color:#bc1a1a">alarm</a>
+									<h3>Time of Occurence</h3>
+								</header>
+								<p>By looking at the hour, day, month, and year of crimes committed, we can find interesting trends on when certain crimes are more or less likely to be committed.</p>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<header>
+									<a href="https://github.com/sarahchou/BostonCrimeDatabase" class="material-icons" style="font-size:80px; color:#bc1a1a">laptop_mac</a>
+									<h3>GitHub</h3>
+								</header>
+								<p>We collaborated our code using GitHub, check out our full project <a href="https://github.com/sarahchou/BostonCrimeDatabase"> here</a></p>
+
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<header>
+									<a href="https://sarahchou.github.io/BostonCrimeDatabase/website/resources.html" class="material-icons" style="font-size:80px; color:#bc1a1a">library_books</a>
+									<h3>Resources</h3>
+								</header>
+								<p>Find out what dataset we used, what technologies we used and other information we gathered to answer our questions.</p>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<header>
+									<a href="#team" class="material-icons" style="font-size:80px; color:#bc1a1a">sentiment_satisfied_alt</a>
+									<h3>Meet the Dream Team</h3>
+								</header>
+								<p>We worked really hard to create this project because we have a strong belief that the data visualizations will tell a meaningful story and that our work will have a significant impact on people in Boston.</p>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+
+		<!-- CTA -->
+			<section id="cta" class="wrapper">
+				<div class="inner">
+					<h2>Our Goal</h2>
+					<p>To answer questions about the Boston Crimes data set and create easy to read data visualizations that accurately analyze the data and tell a significant and meaningful story.</p>
+				</div>
+			</section>
+
+		<!-- Testimonials -->
+		<div id=#team>
+			<section class="wrapper">
+				<div class="inner">
+					<header class="special">
+						<h2>Meet the Team</h2>
+						<p>We are Group 8 and we love learning about Database Design!</p>
+					</header>
+					<div class="testimonials">
+						<section>
+							<div class="content">
+								<blockquote>
+									<p>Year: Third Year</p>
+									<p>Major: Computer Science and Cognitive Psychology</p>
+								</blockquote>
+								<div class="author">
+									<div class="image">
+										<img src="website/images/katie.jpg" alt="" />
+									</div>
+									<p class="credit">- <strong>Katie Busemeyer</strong> <span>Computer Science and Cognitive Psychology</span></p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<blockquote>
+									<p>Year: Fourth Year</p>
+									<p>Major: Computer Science and Cognitive Psychology</p>
+								</blockquote>
+								<div class="author">
+									<div class="image">
+										<img src="website/images/sarah.jpg" alt="" />
+									</div>
+									<p class="credit">- <strong>Sarah Chou</strong> <span>Computer Science and Cognitive Psychology</span></p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<blockquote>
+									<p>Year: Third Year</p>
+									<p>Major: Computer Science and Business</p>
+								</blockquote>
+								<div class="author">
+									<div class="image">
+										<img src="website/images/megan.jpg" alt="" />
+									</div>
+									<p class="credit">- <strong>Megan Lau</strong> <span>Computer Science and Business</span></p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<blockquote>
+									<p>Year: Fourth Year</p>
+									<p>Major: Business</p>
+								</blockquote>
+								<div class="author">
+									<div class="image">
+										<img src="website/images/fang.jpg" alt="" />
+									</div>
+									<p class="credit">- <strong>Fang Wu</strong> <span>Business, Information Science Minor</span></p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<blockquote>
+									<p>Year: Second Year</p>
+									<p>Major: Computer Science and Business Administration</p>
+								</blockquote>
+								<div class="author">
+									<div class="image">
+										<img src="website/images/abby.png" alt="" />
+									</div>
+									<p class="credit">- <strong>Abby Zahne</strong> <span>Computer Science and Business Administration</span></p>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h3>Who We Are </h3>
+							<p> We are Northeastern students who are taking CS 3200 - Database Design, and this is our final project.</p>
+							<p>We hope that this analysis utilizing the Boston Crime Dataset tells a fascinating story using the questions we asked and the data visualizations we created.</p>
+						</section>
+						<section>
+							<h4>Boston Crime Overview</h4>
+							<ul class="alt">
+								<li><a href="website/incidents.html">Incidents</a></li>
+								<li><a href="website/location.html">Locations</a></li>
+								<li><a href="website/time.html">Times</a></li>
+							</ul>
+						</section>
+						<section>
+							<h4>Check Us Out</h4>
+							<ul class="plain">
+								<li><a href="https://github.com/sarahchou/BostonCrimeDatabase"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="copyright">
+						&copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a href="https://coverr.co">Coverr</a>.
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="website/assets/js/jquery.min.js"></script>
+			<script src="website/assets/js/browser.min.js"></script>
+			<script src="website/assets/js/breakpoints.min.js"></script>
+			<script src="website/assets/js/util.js"></script>
+			<script src="website/assets/js/main.js"></script>
+
+	</body>
+</html>
