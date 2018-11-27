@@ -156,3 +156,4 @@ select count(*) from offence; #222
 select count(*) from district; #13
 select count(*) from incident; #293943
 select count(*) from incident_offence; #332173
+select * from incident;
