@@ -1,0 +1,47 @@
+mysql -u root -p --local-infile=1 --show-warnings bostoncrime
+
+//incidents pt1 
+LOAD DATA LOCAL INFILE 'your file' INTO TABLE incident
+  FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+  LINES TERMINATED BY '\r\n'
+  IGNORE 1 LINES;
+
+
+//incidents pt2
+LOAD DATA LOCAL INFILE 'your file' INTO TABLE incident
+  FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+  LINES TERMINATED BY '\r\n'
+  IGNORE 1 LINES;
+
+//incidents_offence - latin1 char set for the slash and hyphen?
+LOAD DATA LOCAL INFILE 'your file'
+INTO TABLE incident_offence
+CHARACTER SET latin1
+  FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+  LINES TERMINATED BY '\r\n'
+  IGNORE 1 LINES;
+
+LOAD DATA LOCAL INFILE 'your file' INTO TABLE incident
+  FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+  LINES TERMINATED BY '\r\n'
+  IGNORE 1 LINES;
+
+LOAD DATA LOCAL INFILE 'your file' INTO TABLE incident
+  FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+  LINES TERMINATED BY '\r\n'
+  IGNORE 1 LINES;
+
+
+//district
+  LOAD DATA LOCAL INFILE 'your file' INTO TABLE incident
+  FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+  LINES TERMINATED BY '\r\n'
+  IGNORE 1 LINES
+  (`district_id`, @name);
+
+//offence
+  LOAD DATA LOCAL INFILE 'your file' INTO TABLE offence
+  FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+  LINES TERMINATED BY '\r\n'
+  IGNORE 1 LINES;
+
