@@ -825,8 +825,10 @@ table.alt tbody tr td {
     width: calc(33.3333333333% + 1rem); }
   .testimonials > :nth-child(-n + 3) {
     padding-top: 0; }
+/*
   .testimonials > :nth-last-child(-n + 3) {
     padding-bottom: 0; }
+*/
   .testimonials > :nth-child(3n + 1) {
     padding-left: 0; }
   .testimonials > :nth-child(3n) {
